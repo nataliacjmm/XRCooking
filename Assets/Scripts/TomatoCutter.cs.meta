@@ -3,7 +3,8 @@ guid: 7ae5f0aac4157bd4185629a764185d90
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - tomatoSlicesPrefab: {fileID: 289685326700786310, guid: 2149c4c90977fe0478cf1247bba9d522, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

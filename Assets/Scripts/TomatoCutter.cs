@@ -1,80 +1,49 @@
 using UnityEngine;
-
+using System.Collections.Generic; // Para que funcionen las listas
+using System.Linq;                // Para que funcione el .Cast y .ToList
 
 public class TomatoCutter : MonoBehaviour
 {
-    [Header("Cutting Settings")]
-    public Transform bladeEdge; // The Empty object at the bottom of the blade
-    public float rayDistance = 0.15f;
-    public GameObject tomatoSlicesPrefab; // The sliced tomato model
+    [Header("Configuración de Efectos")]
+    public GameObject tomatoSlicesPrefab; 
+    public GameObject smokeEffectPrefab;  
 
-    private bool isCutting = false;
-    private GameObject targetTomato;
-    private Vector3 initialCutPosition;
-    private UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable grabInteractable;
-
-    void Start()
+    private void OnTriggerEnter(Collider other)
     {
-        grabInteractable = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>();
-    }
-
-    void Update()
-    {
-        if (!isCutting)
+        if (other.CompareTag("Cutable"))
         {
-            DetectTomato();
-        }
-        else
-        {
-            HandleCuttingMovement();
+            EjecutarCorteInmediato(other.gameObject);
         }
     }
 
-    void DetectTomato()
+    void EjecutarCorteInmediato(GameObject tomateOriginal)
     {
-        RaycastHit hit;
-        // Shoot ray downwards from the blade edge
-        if (Physics.Raycast(bladeEdge.position, Vector3.down, out hit, rayDistance))
+        Vector3 pos = tomateOriginal.transform.position;
+        Quaternion rot = tomateOriginal.transform.rotation;
+
+        if (smokeEffectPrefab != null) 
+            Instantiate(smokeEffectPrefab, pos, rot);
+
+        if (tomatoSlicesPrefab != null)
         {
-            if (hit.collider.CompareTag("Cutable"))
+            GameObject grupoRodajas = Instantiate(tomatoSlicesPrefab, pos, rot);
+
+            // Opción más segura y simple que no da errores:
+            // Buscamos todos los Rigidbody en los hijos y los "liberamos"
+            Rigidbody[] hijos = grupoRodajas.GetComponentsInChildren<Rigidbody>();
+
+            foreach (Rigidbody rb in hijos)
             {
-                StartCutting(hit.collider.gameObject);
+                rb.transform.SetParent(null); // Ahora cada rodaja es independiente
+                
+                // Les damos un pequeño empujón para que no se atraviesen con el cuchillo
+                rb.AddExplosionForce(100f, pos, 0.2f);
             }
+
+            // Destruimos el contenedor vacío que quedó
+            Destroy(grupoRodajas);
         }
-    }
 
-    void StartCutting(GameObject tomato)
-    {
-        isCutting = true;
-        targetTomato = tomato;
-        initialCutPosition = transform.position;
-        
-        Debug.Log("Tomato detected. Locking X/Z axis for vertical cut.");
-    }
-
-    void HandleCuttingMovement()
-    {
-        // Lock X and Z so the knife only moves up/down (Y axis)
-        float currentY = transform.position.y;
-        transform.position = new Vector3(initialCutPosition.x, currentY, initialCutPosition.z);
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        // If we are in cutting mode and hit the board, finish the cut
-        if (isCutting && collision.gameObject.CompareTag("CuttingBoard"))
-        {
-            FinishCut();
-        }
-    }
-
-    void FinishCut()
-    {
-        // Swap models
-        Instantiate(tomatoSlicesPrefab, targetTomato.transform.position, targetTomato.transform.rotation);
-        Destroy(targetTomato);
-        
-        isCutting = false;
-        Debug.Log("Cut complete!");
+        Destroy(tomateOriginal);
     }
 }
