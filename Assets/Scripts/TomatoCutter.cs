@@ -18,8 +18,11 @@ public class TomatoCutter : MonoBehaviour
         grabInteractable = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>();
     }
 
-    void Update()
+void Update()
     {
+        // GÜVENLİK SATIRI: Eğer bladeEdge atanmamışsa hata verme, sadece geri dön.
+        if (bladeEdge == null) return; 
+
         if (!isCutting)
         {
             DetectTomato();
