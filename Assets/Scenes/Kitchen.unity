@@ -139,7 +139,6 @@ GameObject:
   - component: {fileID: 4851609}
   - component: {fileID: 4851613}
   - component: {fileID: 4851614}
-  - component: {fileID: 4851615}
   m_Layer: 0
   m_Name: patty (4)
   m_TagString: Untagged
@@ -156,7 +155,7 @@ Transform:
   m_GameObject: {fileID: 4851607}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0110004, y: 0.151, z: -0.081}
+  m_LocalPosition: {x: -0.011000037, y: 0.18768546, z: -0.08498275}
   m_LocalScale: {x: 1, y: 1.14, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -186,7 +185,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
@@ -418,24 +417,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.189, y: 0.02, z: 0.189}
   m_Center: {x: 0, y: 0.010000059, z: 0}
---- !u!114 &4851615
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4851607}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01310e29fef76449f9a6036d8d36300f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MeatCooking
-  meatRenderer: {fileID: 4851611}
-  rawTint: {r: 1, g: 1, b: 1, a: 1}
-  cookedTint: {r: 0.1792453, g: 0.09666016, b: 0.0752492, a: 1}
-  burntTint: {r: 0.084905684, g: 0.048785724, b: 0.04045035, a: 1}
-  timeToCook: 10
-  timeToBurn: 20
 --- !u!1 &118488296 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 36951204143704064, guid: de13c850f8a7c456c873573c794b96af, type: 3}
@@ -2086,7 +2067,6 @@ GameObject:
   - component: {fileID: 302444357}
   - component: {fileID: 302444361}
   - component: {fileID: 302444362}
-  - component: {fileID: 302444363}
   m_Layer: 0
   m_Name: patty (1)
   m_TagString: Untagged
@@ -2103,7 +2083,7 @@ Transform:
   m_GameObject: {fileID: 302444355}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.011000037, y: 0.087, z: -0.08100033}
+  m_LocalPosition: {x: -0.011000037, y: 0.11468546, z: -0.08100033}
   m_LocalScale: {x: 1, y: 1.14, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2133,7 +2113,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
@@ -2365,24 +2345,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.189, y: 0.02, z: 0.189}
   m_Center: {x: 0, y: 0.010000059, z: 0}
---- !u!114 &302444363
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 302444355}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01310e29fef76449f9a6036d8d36300f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MeatCooking
-  meatRenderer: {fileID: 302444359}
-  rawTint: {r: 1, g: 1, b: 1, a: 1}
-  cookedTint: {r: 0.18039216, g: 0.09803922, b: 0.07450981, a: 1}
-  burntTint: {r: 0.08627451, g: 0.047058824, b: 0.039215688, a: 1}
-  timeToCook: 10
-  timeToBurn: 20
 --- !u!1 &306060763
 GameObject:
   m_ObjectHideFlags: 0
@@ -2411,7 +2373,7 @@ Transform:
   m_GameObject: {fileID: 306060763}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: -0.013, y: 1.13, z: -0.17499971}
+  m_LocalPosition: {x: 0, y: 1.1305518, z: -0.17499971}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2425,7 +2387,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 306060763}
-  m_Mesh: {fileID: 4300000, guid: 0138acf5e80db4f298aa673ed81c3fc3, type: 2}
+  m_Mesh: {fileID: 4300000, guid: fdbdfa8a6cf709349888aefd569a33d0, type: 2}
 --- !u!114 &306060766
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4517,8 +4479,8 @@ MonoBehaviour:
     m_AngleError: 8
     m_AreaError: 15
   m_PreserveMeshAssetOnDestroy: 0
-  assetGuid: 765c25583da14ed59fd8518ced2c2c56
-  m_Mesh: {fileID: 4300000, guid: 0138acf5e80db4f298aa673ed81c3fc3, type: 2}
+  assetGuid: 262b6a2da2f741e985ac59f4af2306e1
+  m_Mesh: {fileID: 4300000, guid: fdbdfa8a6cf709349888aefd569a33d0, type: 2}
   m_VersionIndex: 8
   m_IsSelectable: 1
   m_SelectedFaces: 
@@ -5154,6 +5116,9 @@ PrefabInstance:
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3c8e3fd1f1d9af0449909ca02e2cdc3a, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 1109406764}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3c8e3fd1f1d9af0449909ca02e2cdc3a, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 302444356}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3c8e3fd1f1d9af0449909ca02e2cdc3a, type: 3}
       insertIndex: -1
@@ -5161,9 +5126,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3c8e3fd1f1d9af0449909ca02e2cdc3a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 886433952}
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3c8e3fd1f1d9af0449909ca02e2cdc3a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1109406764}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3c8e3fd1f1d9af0449909ca02e2cdc3a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4851608}
@@ -6708,7 +6670,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -6727,12 +6689,12 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 1
-  m_Enabled: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.33129933, y: 0.060324352, z: 0.31765807}
-  m_Center: {x: -0.0012873107, y: 0.030162176, z: -0.0025110992}
+  m_Size: {x: 0.3287248, y: 0.060324352, z: 0.5110011}
+  m_Center: {x: 0, y: 0.030162176, z: -0.099182606}
 --- !u!1001 &660629343
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7724,9 +7686,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ae5f0aac4157bd4185629a764185d90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TomatoCutter
-  bladeEdge: {fileID: 425179424}
-  rayDistance: 0.15
-  tomatoSlicesPrefab: {fileID: 1352949642055003506, guid: 2149c4c90977fe0478cf1247bba9d522, type: 3}
+  smokeEffectPrefab: {fileID: 0}
 --- !u!1001 &777608722
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8188,7 +8148,6 @@ GameObject:
   - component: {fileID: 838925270}
   - component: {fileID: 838925274}
   - component: {fileID: 838925275}
-  - component: {fileID: 838925276}
   m_Layer: 0
   m_Name: patty (2)
   m_TagString: Untagged
@@ -8205,7 +8164,7 @@ Transform:
   m_GameObject: {fileID: 838925268}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.011000037, y: 0.109, z: -0.08100033}
+  m_LocalPosition: {x: -0.011000037, y: 0.14268546, z: -0.08100033}
   m_LocalScale: {x: 1, y: 1.14, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8235,7 +8194,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
@@ -8467,24 +8426,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.189, y: 0.02, z: 0.189}
   m_Center: {x: 0, y: 0.01, z: 0}
---- !u!114 &838925276
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 838925268}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01310e29fef76449f9a6036d8d36300f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MeatCooking
-  meatRenderer: {fileID: 838925272}
-  rawTint: {r: 1, g: 1, b: 1, a: 1}
-  cookedTint: {r: 0.18039216, g: 0.09803922, b: 0.07450981, a: 1}
-  burntTint: {r: 0.08627451, g: 0.047058824, b: 0.039215688, a: 1}
-  timeToCook: 10
-  timeToBurn: 20
 --- !u!1 &841479079 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e71f6b9216cec2f4ab8749d938006f76, type: 3}
@@ -8683,7 +8624,6 @@ GameObject:
   - component: {fileID: 886433953}
   - component: {fileID: 886433957}
   - component: {fileID: 886433958}
-  - component: {fileID: 886433959}
   m_Layer: 0
   m_Name: patty (3)
   m_TagString: Untagged
@@ -8700,7 +8640,7 @@ Transform:
   m_GameObject: {fileID: 886433951}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.011000037, y: 0.131, z: -0.08100033}
+  m_LocalPosition: {x: -0.011000037, y: 0.16368546, z: -0.08100033}
   m_LocalScale: {x: 1, y: 1.14, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8730,7 +8670,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
@@ -8962,24 +8902,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.189, y: 0.02, z: 0.189}
   m_Center: {x: 0, y: 0.01, z: 0}
---- !u!114 &886433959
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 886433951}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01310e29fef76449f9a6036d8d36300f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MeatCooking
-  meatRenderer: {fileID: 886433955}
-  rawTint: {r: 1, g: 1, b: 1, a: 1}
-  cookedTint: {r: 0.18039216, g: 0.09803922, b: 0.07450981, a: 1}
-  burntTint: {r: 0.08627451, g: 0.047058824, b: 0.039215688, a: 1}
-  timeToCook: 10
-  timeToBurn: 20
 --- !u!1 &901237455
 GameObject:
   m_ObjectHideFlags: 0
@@ -10679,7 +10601,6 @@ GameObject:
   - component: {fileID: 1109406765}
   - component: {fileID: 1109406769}
   - component: {fileID: 1109406770}
-  - component: {fileID: 1109406771}
   m_Layer: 0
   m_Name: patty
   m_TagString: Untagged
@@ -10696,7 +10617,7 @@ Transform:
   m_GameObject: {fileID: 1109406763}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.011000037, y: 0.065, z: -0.07900047}
+  m_LocalPosition: {x: -0.011, y: 0.0854, z: -0.081}
   m_LocalScale: {x: 1, y: 1.14, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10726,7 +10647,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
@@ -10958,24 +10879,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.189, y: 0.02, z: 0.189}
   m_Center: {x: 0, y: 0.01, z: 0}
---- !u!114 &1109406771
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1109406763}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01310e29fef76449f9a6036d8d36300f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MeatCooking
-  meatRenderer: {fileID: 1109406767}
-  rawTint: {r: 1, g: 1, b: 1, a: 1}
-  cookedTint: {r: 0.18039216, g: 0.09803922, b: 0.07450981, a: 1}
-  burntTint: {r: 0.08627451, g: 0.047058824, b: 0.039215688, a: 1}
-  timeToCook: 10
-  timeToBurn: 20
 --- !u!1 &1117616706
 GameObject:
   m_ObjectHideFlags: 0
@@ -12597,8 +12500,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1435391595 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 13628b295f890ad42b428d092b1872fd, type: 3}
-  m_PrefabInstance: {fileID: 1618907840}
+  m_CorrespondingSourceObject: {fileID: 168883418152222657, guid: c8c05942b9741a54ab1c161e6095cac9, type: 3}
+  m_PrefabInstance: {fileID: 6253062493357003514}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1478546605
 PrefabInstance:
@@ -15141,63 +15044,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.05804449, y: 0.0826, z: 0.067024}
   m_Center: {x: 0, y: 0.0413, z: 0}
---- !u!1001 &1618907840
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1668205770}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 13628b295f890ad42b428d092b1872fd, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.034
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 13628b295f890ad42b428d092b1872fd, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.466
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 13628b295f890ad42b428d092b1872fd, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1.4681001
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 13628b295f890ad42b428d092b1872fd, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 13628b295f890ad42b428d092b1872fd, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 13628b295f890ad42b428d092b1872fd, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 13628b295f890ad42b428d092b1872fd, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 13628b295f890ad42b428d092b1872fd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 13628b295f890ad42b428d092b1872fd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 13628b295f890ad42b428d092b1872fd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 13628b295f890ad42b428d092b1872fd, type: 3}
-      propertyPath: m_Name
-      value: bottle-ketchup
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 13628b295f890ad42b428d092b1872fd, type: 3}
 --- !u!1001 &1619646413
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15915,10 +15761,6 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: dda1f67ca4f22624f907c707b43b404b, type: 3}
       propertyPath: m_Name
       value: frying-pan
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: dda1f67ca4f22624f907c707b43b404b, type: 3}
-      propertyPath: m_TagString
-      value: Grill
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18209,6 +18051,63 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.17999998, y: 0.020000005, z: 0.17999999}
   m_Center: {x: 0, y: 0.010000119, z: 0.0000004762411}
+--- !u!1001 &6253062493357003514
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1668205770}
+    m_Modifications:
+    - target: {fileID: 168883418152222657, guid: c8c05942b9741a54ab1c161e6095cac9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.034
+      objectReference: {fileID: 0}
+    - target: {fileID: 168883418152222657, guid: c8c05942b9741a54ab1c161e6095cac9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.466
+      objectReference: {fileID: 0}
+    - target: {fileID: 168883418152222657, guid: c8c05942b9741a54ab1c161e6095cac9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.4681001
+      objectReference: {fileID: 0}
+    - target: {fileID: 168883418152222657, guid: c8c05942b9741a54ab1c161e6095cac9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 168883418152222657, guid: c8c05942b9741a54ab1c161e6095cac9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 168883418152222657, guid: c8c05942b9741a54ab1c161e6095cac9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 168883418152222657, guid: c8c05942b9741a54ab1c161e6095cac9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 168883418152222657, guid: c8c05942b9741a54ab1c161e6095cac9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 168883418152222657, guid: c8c05942b9741a54ab1c161e6095cac9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 168883418152222657, guid: c8c05942b9741a54ab1c161e6095cac9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 656450491288053115, guid: c8c05942b9741a54ab1c161e6095cac9, type: 3}
+      propertyPath: m_Name
+      value: bottle-ketchup
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c8c05942b9741a54ab1c161e6095cac9, type: 3}
 --- !u!23 &8386445223508051002
 MeshRenderer:
   m_ObjectHideFlags: 0

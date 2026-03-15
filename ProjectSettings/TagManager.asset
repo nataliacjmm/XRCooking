@@ -32,15 +32,15 @@ TagManager:
   - QDSUITextInputField
   - SamplesInfoPanel
   - QDSUIToggleCheckboxRadio
-  - Grill
+  - Plate
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ingredientes
   - Water
   - UI
-  - 
+  - Plato
   - 
   - 
   - 
