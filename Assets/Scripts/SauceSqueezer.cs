@@ -1,56 +1,59 @@
 using UnityEngine;
+using UnityEngine.InputSystem; 
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 using UnityEngine.XR.Interaction.Toolkit.Interactors;
 
 public class SauceSqueezer : MonoBehaviour
 {
-    [Header("Configuration de la Sauce")]
-    [SerializeField] private ParticleSystem sauceParticles;
-    [SerializeField] private float maxEmissionRate = 50f;
+    [Header("Sauce Settings")]
+    public ParticleSystem sauceParticles;
+    public float maxEmissionRate = 50f;
 
-    private XRGrabInteractable _grabInteractable;
+    private XRGrabInteractable _grab;
 
     void Awake()
     {
-        // On récupère automatiquement le composant Grab sur la bouteille
-        _grabInteractable = GetComponent<XRGrabInteractable>();
+        _grab = GetComponent<XRGrabInteractable>();
     }
 
     void Update()
     {
-        // On vérifie si la bouteille est actuellement tenue par le joueur
-        if (_grabInteractable.isSelected)
+        if (_grab == null || sauceParticles == null) return;
+
+        // Check if the bottle is currently being held by the player
+        if (_grab.isSelected)
         {
-            // On récupère le premier interrupteur (la main) qui tient la bouteille
-            var interactor = _grabInteractable.firstInteractorSelecting;
+            // Check for simulator mouse click
+            bool isMousePressed = Mouse.current != null && Mouse.current.leftButton.isPressed;
+            
+            // Get the actual trigger pressure from the VR controller
+            float force = GetForce(_grab.firstInteractorSelecting);
 
-            // On récupère la valeur de pression de la gâchette (Trigger)
-            float squeezeValue = GetSqueezeForce(interactor);
-
-            // On met à jour le débit de particules
-            UpdateSauceEmission(squeezeValue);
+            // Simulator fallback: if held but no controller input, use mouse click
+            if (isMousePressed && force == 0)
+            {
+                force = 1f;
+            }
+            
+            UpdateSauceEmission(force);
         }
         else
         {
-            // Si on lâche la bouteille, on arrête la sauce immédiatement
+            // If the bottle is NOT held, force emission to stop immediately
             UpdateSauceEmission(0f);
         }
     }
 
     private void UpdateSauceEmission(float value)
     {
-        if (sauceParticles == null) return;
-
         var emission = sauceParticles.emission;
-        // On multiplie la pression (0 à 1) par le débit max souhaité
         emission.rateOverTime = value * maxEmissionRate;
     }
 
-    private float GetSqueezeForce(IXRSelectInteractor interactor)
+    private float GetForce(IXRSelectInteractor interactor)
     {
-        // Dans Unity 6 / XRI 3.0, on accède à l'état de l'action "Activate" (la gâchette)
-        if (interactor is XRBaseInputInteractor inputInteractor)
+        if (interactor is XRBaseInputInteractor inputInteractor && inputInteractor.xrController != null)
         {
             return inputInteractor.xrController.activateInteractionState.value;
         }
