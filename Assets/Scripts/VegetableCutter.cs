@@ -35,7 +35,7 @@ public class VegetableCutter : MonoBehaviour
         foreach (Rigidbody rb in hijos)
         {
             rb.transform.SetParent(null);
-            rb.AddExplosionForce(100f, pos, 0.2f);
+            rb.AddExplosionForce(10f, pos, 0.2f);
         }
 
         Destroy(grupoRodajas);
