@@ -1,37 +1,43 @@
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
-public partial class PlateProvider : MonoBehaviour
+public class PlateProvider : MonoBehaviour
 {
-    public GameObject platePrefab; 
-    public Transform spawnPoint;   // El objeto vacío que marca dónde aparece el plato
+    public GameObject platePrefab;
+    public Transform spawnPoint;
+    private bool isQuitting = false; // Nueva variable para controlar el cierre
 
     private void Start()
     {
-        SpawnNewPlate(); // Creamos el primer plato al empezar
+        SpawnNewPlate();
+    }
+
+    // Unity llama a esto automáticamente cuando pulsas Stop o cierras la app
+    private void OnApplicationQuit()
+    {
+        isQuitting = true;
     }
 
     public void SpawnNewPlate()
     {
-        if (platePrefab != null && spawnPoint != null)
-        {
-            // Creamos el plato en el soporte
-            GameObject newPlate = Instantiate(platePrefab, spawnPoint.position, spawnPoint.rotation);
-            
-            // Obtenemos su componente de agarre
-            UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable grabScript = newPlate.GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>();
+        // Si el juego se está cerrando, salimos de la función sin crear nada
+        if (isQuitting || platePrefab == null || spawnPoint == null) return;
 
-            if (grabScript != null)
-            {
-                // Cuando el jugador suelte el plato (ya se lo llevó), creamos otro
-                grabScript.selectExited.AddListener(OnPlateTaken);
-            }
+        GameObject newPlate = Instantiate(platePrefab, spawnPoint.position, spawnPoint.rotation);
+        UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable grabScript = newPlate.GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>();
+
+        if (grabScript != null)
+        {
+            grabScript.selectExited.AddListener(OnPlateTaken);
         }
     }
 
     private void OnPlateTaken(SelectExitEventArgs args)
     {
-        // El plato ya no está en el soporte, llamamos al creador
-        SpawnNewPlate();
+        // Solo creamos un plato nuevo si NO nos estamos saliendo del juego
+        if (!isQuitting)
+        {
+            SpawnNewPlate();
+        }
     }
 }
