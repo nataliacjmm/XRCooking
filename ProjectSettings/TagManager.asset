@@ -33,6 +33,7 @@ TagManager:
   - SamplesInfoPanel
   - QDSUIToggleCheckboxRadio
   - Plate
+  - Grill
   layers:
   - Default
   - TransparentFX
