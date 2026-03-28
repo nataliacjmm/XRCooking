@@ -35,6 +35,8 @@ TagManager:
   - Plate
   - Sarten
   - Carne
+  - wholeEgg
+  - pan
   layers:
   - Default
   - TransparentFX

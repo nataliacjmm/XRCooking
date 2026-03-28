@@ -5,10 +5,6 @@ public class EggCooker : MonoBehaviour
     [Header("Cooking Settings")]
     public float cookDelay = 1.5f;      
     public GameObject eggCooked;        
-
-    [Header("Burn Settings")]
-    public float burnDelay = 15f;       
-
     [Header("Spawn Settings")]
     public Transform eggSpawnPoint;     
 
@@ -49,30 +45,8 @@ public class EggCooker : MonoBehaviour
         Destroy(gameObject);
 
        
-        StartCoroutine(BurnEgg(cookedEggInstance));
+      
     }
 
-    System.Collections.IEnumerator BurnEgg(GameObject cookedEgg)
-    {
-        yield return new WaitForSeconds(burnDelay);
-
-        
-        if (cookedEgg == null) yield break;
-
-        Debug.Log("Egg is burned!");
-
-        Renderer[] renderers = cookedEgg.GetComponentsInChildren<Renderer>();
-
-        foreach (Renderer r in renderers)
-        {
-            if (r.material.HasProperty("_BaseColor"))
-            {
-                r.material.SetColor("_BaseColor", Color.black);
-            }
-            else
-            {
-                r.material.color = Color.black;
-            }
-        }
-    }
+   
 }
