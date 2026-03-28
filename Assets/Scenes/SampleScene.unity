@@ -385,6 +385,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
       insertIndex: -1
       addedObject: {fileID: 429789650}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 429789655}
   m_SourcePrefab: {fileID: 100100000, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
 --- !u!1001 &72930131
 PrefabInstance:
@@ -451,6 +454,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
       insertIndex: -1
       addedObject: {fileID: 920116511}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 920116516}
   m_SourcePrefab: {fileID: 100100000, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
 --- !u!1 &73808061
 GameObject:
@@ -3611,6 +3617,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &193592826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 193592819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f0a9478918c38f4397180712e2f9f19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EggCooker
+  cookDelay: 1.5
+  eggCooked: {fileID: 919132149155446097, guid: b1caa0460d0143f4c869a37098041526, type: 3}
+  burnDelay: 15
+  eggSpawnPoint: {fileID: 195762045}
 --- !u!1 &194178968
 GameObject:
   m_ObjectHideFlags: 0
@@ -3687,6 +3709,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 194178968}
   m_CullTransparentMesh: 1
+--- !u!1 &195762044
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 195762045}
+  m_Layer: 0
+  m_Name: eggSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &195762045
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 195762044}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 179634779}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &199741484
 GameObject:
   m_ObjectHideFlags: 0
@@ -5228,6 +5281,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &296294610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296294603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f0a9478918c38f4397180712e2f9f19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EggCooker
+  cookDelay: 1.5
+  eggCooked: {fileID: 919132149155446097, guid: b1caa0460d0143f4c869a37098041526, type: 3}
+  burnDelay: 15
+  eggSpawnPoint: {fileID: 195762045}
 --- !u!1 &299091254
 GameObject:
   m_ObjectHideFlags: 0
@@ -5731,6 +5800,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &331364545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 331364538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f0a9478918c38f4397180712e2f9f19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EggCooker
+  cookDelay: 1.5
+  eggCooked: {fileID: 919132149155446097, guid: b1caa0460d0143f4c869a37098041526, type: 3}
+  burnDelay: 15
+  eggSpawnPoint: {fileID: 195762045}
 --- !u!1 &331871138
 GameObject:
   m_ObjectHideFlags: 0
@@ -7428,6 +7513,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &429789655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429789648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f0a9478918c38f4397180712e2f9f19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EggCooker
+  cookDelay: 1.5
+  eggCooked: {fileID: 919132149155446097, guid: b1caa0460d0143f4c869a37098041526, type: 3}
+  burnDelay: 15
+  eggSpawnPoint: {fileID: 195762045}
 --- !u!1 &430893808
 GameObject:
   m_ObjectHideFlags: 0
@@ -9806,6 +9907,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &552572338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 552572331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f0a9478918c38f4397180712e2f9f19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EggCooker
+  cookDelay: 1.5
+  eggCooked: {fileID: 919132149155446097, guid: b1caa0460d0143f4c869a37098041526, type: 3}
+  burnDelay: 15
+  eggSpawnPoint: {fileID: 195762045}
 --- !u!1 &553794919 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e71f6b9216cec2f4ab8749d938006f76, type: 3}
@@ -12449,6 +12566,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
       insertIndex: -1
       addedObject: {fileID: 705262864}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 705262869}
   m_SourcePrefab: {fileID: 100100000, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
 --- !u!1 &701445029
 GameObject:
@@ -12682,6 +12802,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &705262869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705262862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f0a9478918c38f4397180712e2f9f19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EggCooker
+  cookDelay: 1.5
+  eggCooked: {fileID: 919132149155446097, guid: b1caa0460d0143f4c869a37098041526, type: 3}
+  burnDelay: 15
+  eggSpawnPoint: {fileID: 195762045}
 --- !u!1001 &705729090
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14378,6 +14514,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &837138970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837138963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f0a9478918c38f4397180712e2f9f19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EggCooker
+  cookDelay: 1.5
+  eggCooked: {fileID: 919132149155446097, guid: b1caa0460d0143f4c869a37098041526, type: 3}
+  burnDelay: 15
+  eggSpawnPoint: {fileID: 195762045}
 --- !u!1 &841128059
 GameObject:
   m_ObjectHideFlags: 0
@@ -14949,6 +15101,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
       insertIndex: -1
       addedObject: {fileID: 193592821}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 193592826}
   m_SourcePrefab: {fileID: 100100000, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
 --- !u!1001 &888169708
 PrefabInstance:
@@ -15015,6 +15170,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
       insertIndex: -1
       addedObject: {fileID: 331364540}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 331364545}
   m_SourcePrefab: {fileID: 100100000, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
 --- !u!224 &888636339 stripped
 RectTransform:
@@ -15829,6 +15987,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &920116516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920116509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f0a9478918c38f4397180712e2f9f19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EggCooker
+  cookDelay: 1.5
+  eggCooked: {fileID: 919132149155446097, guid: b1caa0460d0143f4c869a37098041526, type: 3}
+  burnDelay: 15
+  eggSpawnPoint: {fileID: 195762045}
 --- !u!1 &924348644 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 593e79155e71bc1489de86ece99a24b9, type: 3}
@@ -17827,6 +18001,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
       insertIndex: -1
       addedObject: {fileID: 296294605}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 296294610}
   m_SourcePrefab: {fileID: 100100000, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
 --- !u!1 &1117374924
 GameObject:
@@ -23625,6 +23802,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
       insertIndex: -1
       addedObject: {fileID: 837138965}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 837138970}
   m_SourcePrefab: {fileID: 100100000, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
 --- !u!1 &1533437182
 GameObject:
@@ -25887,7 +26067,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: dda1f67ca4f22624f907c707b43b404b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 195762045}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: dda1f67ca4f22624f907c707b43b404b, type: 3}
       insertIndex: -1
@@ -26231,6 +26414,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
       insertIndex: -1
       addedObject: {fileID: 552572333}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 552572338}
   m_SourcePrefab: {fileID: 100100000, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
 --- !u!224 &1714251360 stripped
 RectTransform:
@@ -27146,6 +27332,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &1791575208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791575201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f0a9478918c38f4397180712e2f9f19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EggCooker
+  cookDelay: 1.5
+  eggCooked: {fileID: 919132149155446097, guid: b1caa0460d0143f4c869a37098041526, type: 3}
+  burnDelay: 15
+  eggSpawnPoint: {fileID: 195762045}
 --- !u!1 &1814049482 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1a1602a5ca8c8a541a6a4cab80aeaf71, type: 3}
@@ -29494,6 +29696,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1976020923}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1976020928}
   m_SourcePrefab: {fileID: 100100000, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
 --- !u!1 &1949060115
 GameObject:
@@ -30568,6 +30773,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &1976020928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976020921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f0a9478918c38f4397180712e2f9f19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EggCooker
+  cookDelay: 1.5
+  eggCooked: {fileID: 919132149155446097, guid: b1caa0460d0143f4c869a37098041526, type: 3}
+  burnDelay: 15
+  eggSpawnPoint: {fileID: 195762045}
 --- !u!1 &1978820275
 GameObject:
   m_ObjectHideFlags: 0
@@ -31849,7 +32070,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2077305670}
-  m_Mesh: {fileID: 4300000, guid: af6eb5933ad1ee2458415bb017c73086, type: 2}
+  m_Mesh: {fileID: 4300000, guid: cb26cb55cfae36f4481d21f765cd3447, type: 2}
 --- !u!114 &2077305673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33941,8 +34162,8 @@ MonoBehaviour:
     m_AngleError: 8
     m_AreaError: 15
   m_PreserveMeshAssetOnDestroy: 0
-  assetGuid: 154fe7fb67d74fdba6d7c1c28b4a0346
-  m_Mesh: {fileID: 4300000, guid: af6eb5933ad1ee2458415bb017c73086, type: 2}
+  assetGuid: 953793b04aed4afb8bcb2bf8db6d351e
+  m_Mesh: {fileID: 4300000, guid: cb26cb55cfae36f4481d21f765cd3447, type: 2}
   m_VersionIndex: 8
   m_IsSelectable: 1
   m_SelectedFaces: 
@@ -34019,7 +34240,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: af6eb5933ad1ee2458415bb017c73086, type: 2}
+  m_Mesh: {fileID: 4300000, guid: cb26cb55cfae36f4481d21f765cd3447, type: 2}
 --- !u!1 &2078959960
 GameObject:
   m_ObjectHideFlags: 0
@@ -35920,6 +36141,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1791575203}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1791575208}
   m_SourcePrefab: {fileID: 100100000, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
 --- !u!1 &2140134476
 GameObject:
