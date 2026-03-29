@@ -1,4 +1,4 @@
-using UnityEngine;
+/*using UnityEngine;
 using UnityEngine.InputSystem; 
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
@@ -58,5 +58,51 @@ public class SauceSqueezer : MonoBehaviour
             return inputInteractor.xrController.activateInteractionState.value;
         }
         return 0f;
+    }
+}*/
+
+using UnityEngine;
+using UnityEngine.InputSystem; // Indispensable
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
+
+public class SauceSqueezer : MonoBehaviour
+{
+    public ParticleSystem sauceParticles;
+    public float maxEmissionRate = 50f;
+
+    public InputActionReference leftTriggerAction;
+    public InputActionReference rightTriggerAction;
+
+    private XRGrabInteractable _grab;
+
+    void Awake() => _grab = GetComponent<XRGrabInteractable>();
+
+    void Update()
+    {
+        if (_grab != null && _grab.isSelected)
+        {
+            var interactor = _grab.firstInteractorSelecting;
+            float triggerValue = 0f;
+
+            if (interactor.transform.name.ToLower().Contains("left"))
+            {
+                triggerValue = leftTriggerAction.action.ReadValue<float>();
+            }
+            else
+            {
+                triggerValue = rightTriggerAction.action.ReadValue<float>();
+            }
+            UpdateEmission(triggerValue);
+        }
+        else
+        {
+            UpdateEmission(0f);
+        }
+    }
+
+    void UpdateEmission(float value)
+    {
+        var emission = sauceParticles.emission;
+        emission.rateOverTime = value * maxEmissionRate;
     }
 }

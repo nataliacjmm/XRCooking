@@ -11827,7 +11827,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 656450491288053115, guid: c8c05942b9741a54ab1c161e6095cac9, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5787542947979920739, guid: c8c05942b9741a54ab1c161e6095cac9, type: 3}
       propertyPath: moveWithTransform
@@ -11842,10 +11842,6 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5787542947979920739, guid: c8c05942b9741a54ab1c161e6095cac9, type: 3}
-      propertyPath: InitialModule.startSize.scalar
-      value: 0.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 5787542947979920739, guid: c8c05942b9741a54ab1c161e6095cac9, type: 3}
       propertyPath: CollisionModule.m_Bounce.scalar
       value: 0
       objectReference: {fileID: 0}
@@ -11854,16 +11850,8 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5787542947979920739, guid: c8c05942b9741a54ab1c161e6095cac9, type: 3}
-      propertyPath: InitialModule.startSpeed.scalar
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 5787542947979920739, guid: c8c05942b9741a54ab1c161e6095cac9, type: 3}
       propertyPath: CollisionModule.collisionMessages
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5787542947979920739, guid: c8c05942b9741a54ab1c161e6095cac9, type: 3}
-      propertyPath: EmissionModule.rateOverTime.scalar
-      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 5787542947979920739, guid: c8c05942b9741a54ab1c161e6095cac9, type: 3}
       propertyPath: CollisionModule.collidesWith.m_Bits
@@ -11873,21 +11861,13 @@ PrefabInstance:
       propertyPath: CollisionModule.m_Planes.Array.size
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5787542947979920739, guid: c8c05942b9741a54ab1c161e6095cac9, type: 3}
-      propertyPath: InitialModule.gravityModifier.scalar
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5787542947979920739, guid: c8c05942b9741a54ab1c161e6095cac9, type: 3}
-      propertyPath: EmissionModule.rateOverDistance.scalar
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6384067807509567723, guid: c8c05942b9741a54ab1c161e6095cac9, type: 3}
       propertyPath: m_UseGravity
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6384067807509567723, guid: c8c05942b9741a54ab1c161e6095cac9, type: 3}
       propertyPath: m_IsKinematic
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6384067807509567723, guid: c8c05942b9741a54ab1c161e6095cac9, type: 3}
       propertyPath: m_CollisionDetection
@@ -11897,14 +11877,6 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
-    - target: {fileID: 7704270909541668388, guid: c8c05942b9741a54ab1c161e6095cac9, type: 3}
-      propertyPath: leftTriggerAction
-      value: 
-      objectReference: {fileID: -4289430672226363583, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-    - target: {fileID: 7704270909541668388, guid: c8c05942b9741a54ab1c161e6095cac9, type: 3}
-      propertyPath: rightTriggerAction
-      value: 
-      objectReference: {fileID: 7904272356298805229, guid: c348712bda248c246b8c49b3db54643f, type: 3}
     - target: {fileID: 7923291657430342359, guid: c8c05942b9741a54ab1c161e6095cac9, type: 3}
       propertyPath: m_AttachTransform
       value: 
@@ -17579,12 +17551,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1022592248}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5680326, y: -0.8151805, z: 3.0389035}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.7080326, y: 0.08481948, z: 3.9789035}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 818446747}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1022592251
 MonoBehaviour:
@@ -19067,10 +19039,6 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 13628b295f890ad42b428d092b1872fd, type: 3}
       propertyPath: m_Name
       value: bottle-ketchup
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 13628b295f890ad42b428d092b1872fd, type: 3}
-      propertyPath: m_Layer
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22250,9 +22218,6 @@ PrefabInstance:
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8806329115733545878, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
       insertIndex: 0
-      addedObject: {fileID: 1022592250}
-    - targetCorrespondingSourceObject: {fileID: 8806329115733545878, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
-      insertIndex: 1
       addedObject: {fileID: 1373438746}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7917674758919744183, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
@@ -39060,3 +39025,4 @@ SceneRoots:
   - {fileID: 610590593}
   - {fileID: 1825945902}
   - {fileID: 139831063}
+  - {fileID: 1022592250}
