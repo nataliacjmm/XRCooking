@@ -423,6 +423,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: egg (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
+      propertyPath: m_TagString
+      value: wholeEgg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -436,6 +440,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
       insertIndex: -1
       addedObject: {fileID: 429789650}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 429789653}
   m_SourcePrefab: {fileID: 100100000, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
 --- !u!1001 &72930131
 PrefabInstance:
@@ -489,6 +496,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: egg (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
+      propertyPath: m_TagString
+      value: wholeEgg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -502,6 +513,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
       insertIndex: -1
       addedObject: {fileID: 920116511}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 920116514}
   m_SourcePrefab: {fileID: 100100000, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
 --- !u!1 &73808061
 GameObject:
@@ -3726,6 +3740,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &193592824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 193592819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03772429dd08bde4186af93668c6ea69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  cookDelay: 1.5
+  eggCooked: {fileID: 919132149155446097, guid: b1caa0460d0143f4c869a37098041526, type: 3}
+  eggSpawnPoint: {fileID: 653869144}
 --- !u!1 &194178968
 GameObject:
   m_ObjectHideFlags: 0
@@ -5498,6 +5527,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &296294608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296294603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03772429dd08bde4186af93668c6ea69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  cookDelay: 1.5
+  eggCooked: {fileID: 919132149155446097, guid: b1caa0460d0143f4c869a37098041526, type: 3}
+  eggSpawnPoint: {fileID: 653869144}
 --- !u!1 &299091254
 GameObject:
   m_ObjectHideFlags: 0
@@ -6001,6 +6045,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &331364543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 331364538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03772429dd08bde4186af93668c6ea69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  cookDelay: 1.5
+  eggCooked: {fileID: 919132149155446097, guid: b1caa0460d0143f4c869a37098041526, type: 3}
+  eggSpawnPoint: {fileID: 653869144}
 --- !u!1 &331871138
 GameObject:
   m_ObjectHideFlags: 0
@@ -7698,6 +7757,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &429789653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429789648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03772429dd08bde4186af93668c6ea69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  cookDelay: 1.5
+  eggCooked: {fileID: 919132149155446097, guid: b1caa0460d0143f4c869a37098041526, type: 3}
+  eggSpawnPoint: {fileID: 653869144}
 --- !u!1 &430893808
 GameObject:
   m_ObjectHideFlags: 0
@@ -10076,6 +10150,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &552572336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 552572331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03772429dd08bde4186af93668c6ea69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  cookDelay: 1.5
+  eggCooked: {fileID: 919132149155446097, guid: b1caa0460d0143f4c869a37098041526, type: 3}
+  eggSpawnPoint: {fileID: 653869144}
 --- !u!1 &553794919 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e71f6b9216cec2f4ab8749d938006f76, type: 3}
@@ -11931,6 +12020,37 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 53017575}
   m_SourcePrefab: {fileID: 100100000, guid: c8c05942b9741a54ab1c161e6095cac9, type: 3}
+--- !u!1 &653869143
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 653869144}
+  m_Layer: 0
+  m_Name: eggSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &653869144
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 653869143}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 179634779}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &662047629
 GameObject:
   m_ObjectHideFlags: 0
@@ -12859,6 +12979,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: egg (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
+      propertyPath: m_TagString
+      value: wholeEgg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12872,6 +12996,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
       insertIndex: -1
       addedObject: {fileID: 705262864}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 705262867}
   m_SourcePrefab: {fileID: 100100000, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
 --- !u!1 &701445029
 GameObject:
@@ -13105,6 +13232,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &705262867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705262862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03772429dd08bde4186af93668c6ea69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  cookDelay: 1.5
+  eggCooked: {fileID: 919132149155446097, guid: b1caa0460d0143f4c869a37098041526, type: 3}
+  eggSpawnPoint: {fileID: 653869144}
 --- !u!1001 &705729090
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14817,6 +14959,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &837138968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837138963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03772429dd08bde4186af93668c6ea69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  cookDelay: 1.5
+  eggCooked: {fileID: 919132149155446097, guid: b1caa0460d0143f4c869a37098041526, type: 3}
+  eggSpawnPoint: {fileID: 653869144}
 --- !u!1 &841128059
 GameObject:
   m_ObjectHideFlags: 0
@@ -15375,6 +15532,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: egg (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
+      propertyPath: m_TagString
+      value: wholeEgg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15388,6 +15549,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
       insertIndex: -1
       addedObject: {fileID: 193592821}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 193592824}
   m_SourcePrefab: {fileID: 100100000, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
 --- !u!1 &884812737
 GameObject:
@@ -15472,6 +15636,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: egg (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
+      propertyPath: m_TagString
+      value: wholeEgg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15485,6 +15653,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
       insertIndex: -1
       addedObject: {fileID: 331364540}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 331364543}
   m_SourcePrefab: {fileID: 100100000, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
 --- !u!224 &888636339 stripped
 RectTransform:
@@ -16330,6 +16501,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &920116514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920116509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03772429dd08bde4186af93668c6ea69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  cookDelay: 1.5
+  eggCooked: {fileID: 919132149155446097, guid: b1caa0460d0143f4c869a37098041526, type: 3}
+  eggSpawnPoint: {fileID: 653869144}
 --- !u!1 &924348644 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 593e79155e71bc1489de86ece99a24b9, type: 3}
@@ -18330,6 +18516,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: egg (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
+      propertyPath: m_TagString
+      value: wholeEgg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18343,6 +18533,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
       insertIndex: -1
       addedObject: {fileID: 296294605}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 296294608}
   m_SourcePrefab: {fileID: 100100000, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
 --- !u!1 &1117374924
 GameObject:
@@ -24540,6 +24733,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: egg (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
+      propertyPath: m_TagString
+      value: wholeEgg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24553,6 +24750,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
       insertIndex: -1
       addedObject: {fileID: 837138965}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 837138968}
   m_SourcePrefab: {fileID: 100100000, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
 --- !u!1 &1533437182
 GameObject:
@@ -26852,7 +27052,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: dda1f67ca4f22624f907c707b43b404b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 653869144}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: dda1f67ca4f22624f907c707b43b404b, type: 3}
       insertIndex: -1
@@ -27216,6 +27419,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: egg (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
+      propertyPath: m_TagString
+      value: wholeEgg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27229,6 +27436,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
       insertIndex: -1
       addedObject: {fileID: 552572333}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 552572336}
   m_SourcePrefab: {fileID: 100100000, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
 --- !u!224 &1714251360 stripped
 RectTransform:
@@ -28155,6 +28365,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &1791575206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791575201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03772429dd08bde4186af93668c6ea69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  cookDelay: 1.5
+  eggCooked: {fileID: 919132149155446097, guid: b1caa0460d0143f4c869a37098041526, type: 3}
+  eggSpawnPoint: {fileID: 653869144}
 --- !u!1 &1814049482 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1a1602a5ca8c8a541a6a4cab80aeaf71, type: 3}
@@ -30490,6 +30715,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: egg
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
+      propertyPath: m_TagString
+      value: wholeEgg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -30503,6 +30732,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1976020923}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1976020926}
   m_SourcePrefab: {fileID: 100100000, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
 --- !u!1 &1949060115
 GameObject:
@@ -31577,6 +31809,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &1976020926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976020921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03772429dd08bde4186af93668c6ea69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  cookDelay: 1.5
+  eggCooked: {fileID: 919132149155446097, guid: b1caa0460d0143f4c869a37098041526, type: 3}
+  eggSpawnPoint: {fileID: 653869144}
 --- !u!1 &1978820275
 GameObject:
   m_ObjectHideFlags: 0
@@ -32858,7 +33105,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2077305670}
-  m_Mesh: {fileID: 4300000, guid: 124b8b4a07d1c76499a17129361eccde, type: 2}
+  m_Mesh: {fileID: 4300000, guid: 39b576527ee2db1478e863a2e26d5c84, type: 2}
 --- !u!114 &2077305673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34950,8 +35197,8 @@ MonoBehaviour:
     m_AngleError: 8
     m_AreaError: 15
   m_PreserveMeshAssetOnDestroy: 0
-  assetGuid: b064925a82e042738a5788885931ca64
-  m_Mesh: {fileID: 4300000, guid: 124b8b4a07d1c76499a17129361eccde, type: 2}
+  assetGuid: 797984310d704a95966c8da95ee881d8
+  m_Mesh: {fileID: 4300000, guid: 39b576527ee2db1478e863a2e26d5c84, type: 2}
   m_VersionIndex: 8
   m_IsSelectable: 1
   m_SelectedFaces: 
@@ -35028,7 +35275,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 124b8b4a07d1c76499a17129361eccde, type: 2}
+  m_Mesh: {fileID: 4300000, guid: 39b576527ee2db1478e863a2e26d5c84, type: 2}
 --- !u!1 &2078959960
 GameObject:
   m_ObjectHideFlags: 0
@@ -37030,6 +37277,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: egg (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
+      propertyPath: m_TagString
+      value: wholeEgg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -37043,6 +37294,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1791575203}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1791575206}
   m_SourcePrefab: {fileID: 100100000, guid: c83fa29ae91fa9e4a82165b3f39d38ac, type: 3}
 --- !u!1 &2140134476
 GameObject:
