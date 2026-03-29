@@ -3,12 +3,12 @@ using UnityEngine;
 public class MeatCooking : MonoBehaviour
 {
     [Header("Visual References")]
-    public Renderer meatRenderer; 
+    public Renderer meatRenderer; // The Renderer component of the meat
     
-    [Header("Cooking Colors")]
-    public Color rawTint = Color.white;
-    public Color cookedTint;
-    public Color burntTint;
+    [Header("Cooking Colors (Pick them in Inspector!)")]
+    public Color rawTint = Color.white;    // Initial color tint (White shows the original texture)
+    public Color cookedTint;  // Target color when perfectly cooked
+    public Color burntTint;  // Target color when overcooked/burnt"
 
     [Header("Timers")]
     public float timeToCook = 60f;
@@ -16,18 +16,15 @@ public class MeatCooking : MonoBehaviour
 
     private float cookingTimer = 0f;
     private bool isTouchingGrill = false;
-    private Material instanceMaterial;
+    private Material instanceMaterial; // Unique material instance for this specific object
 
     void Awake()
     {
-        if (meatRenderer != null)
-        {
-            instanceMaterial = meatRenderer.material;
-        }
+        // a copy of the material so each patty cooks independently
+        instanceMaterial = meatRenderer.material;
     }
 
-    // --- TETİKLEYİCİ KONTROLLERİ (Is Trigger AÇIKSA) ---
-    void OnTriggerStay(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Grill")) isTouchingGrill = true;
     }
@@ -37,17 +34,6 @@ public class MeatCooking : MonoBehaviour
         if (other.CompareTag("Grill")) isTouchingGrill = false;
     }
 
-    // --- ÇARPIŞMA KONTROLLERİ (Is Trigger KAPALIYSA) ---
-    void OnCollisionStay(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Grill")) isTouchingGrill = true;
-    }
-
-    void OnCollisionExit(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Grill")) isTouchingGrill = false;
-    }
-
     void Update()
     {
         if (isTouchingGrill)
@@ -55,15 +41,10 @@ public class MeatCooking : MonoBehaviour
             cookingTimer += Time.deltaTime;
             UpdateVisuals();
         }
-        
-        // Önemli: Her karede isTouchingGrill'i fizik fonksiyonları güncellemezse 
-        // pişmenin durması için Stay metodlarını kullanıyoruz.
     }
 
     void UpdateVisuals()
     {
-        if (instanceMaterial == null) return;
-
         if (cookingTimer <= timeToCook)
         {
             float lerpVal = cookingTimer / timeToCook;

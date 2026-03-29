@@ -32,15 +32,18 @@ TagManager:
   - QDSUITextInputField
   - SamplesInfoPanel
   - QDSUIToggleCheckboxRadio
+  - Plate
+  - Sarten
+  - Carne
   - Grill
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ingredientes
   - Water
   - UI
-  - 
+  - Plato
   - 
   - 
   - 
